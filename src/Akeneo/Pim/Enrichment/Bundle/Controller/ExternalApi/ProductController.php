@@ -221,7 +221,6 @@ class ProductController
             throw new UnprocessableEntityHttpException($e->getMessage(), $e);
         }
 
-
         return new JsonResponse($this->normalizeProductsList($products, $query));
     }
 
